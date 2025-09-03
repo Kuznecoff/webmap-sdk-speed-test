@@ -6,6 +6,6 @@ jobs:
     name: running sitespeed.io
     steps:
       - name: code checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: running sitespeed.io container with arguments and optional Docker options
         run: docker run -v "$(pwd):/sitespeed.io" sitespeedio/sitespeed.io:38.2.0 https://kuznecoff.github.io/webmap-sdk-speed-test/mapgl/mapgl-zoom-11.html --outputFolder output --video --budget.configPath .github/budget.json -n 1 
