@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2GIS MapGL</title>
+    <style>
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="https://mapgl.2gis.com/api/js/v1"></script>
+    <script type="text/javascript">
+        const map = new mapgl.Map("container", {
+            center: [37.568547892988605, 55.798750061710756],
+            zoom: 17,
+            key: 'a1893935-6834-4445-b97a-3405fb426c5b', // API key can be used on 2gis.github.io/mapgl-examples only!
+        });
+    </script>
+</body>
+
+</html>
